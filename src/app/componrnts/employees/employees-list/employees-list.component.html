@@ -1,0 +1,205 @@
+<!-- <div class="container my-5">
+ <h1 class="mb-3">Employees</h1>
+ <table class="table" *ngIf="employees && employees.length > 0">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees ">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.phone}}</td>
+            <td>{{employee.salary}}</td>
+        </tr>
+    </tbody>
+ </table>
+ <p *ngIf="!employees || employees.length <= 0">No Employees Found</p>
+</div> -->
+
+
+
+<!-- <div  class="container mob-table">
+  <div class="headers">
+    <h2 class="table-title">Employee Details</h2>
+     <button type="button" class="btn add"  (click)="openForms()">Add
+     Employee
+    </button>  -->
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="mobileForm">
+          <h2 class="text-center text-info">{{formHeader}}</h2>
+          <div class="group">
+            <label for="">Name:</label>
+            <input type="text" class="form-control" [(ngModel)]="mobileName" name="mobileName" minlength="5">
+          </div>
+          <div class="group">
+           <label for="">Price:</label>
+           <input type="text" class="form-control" [(ngModel)]="price" name="price" min="1000">
+         </div>
+         <div class="group">
+           <label for="">RAM:</label>
+           <input type="text" class="form-control" [(ngModel)]="ram" name="ram" min="1">
+         </div>
+         <div class="group">
+           <label for="">Storage:</label>
+           <input type="text" class="form-control" [(ngModel)]="storage" name="storage" min="1">
+         </div>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="employee-table">
+  <table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Salary</th>
+      <th>Birthday</th>
+      <th>Company</th>
+      <th>Experience</th>
+      <th>Gender</th>
+      
+    
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody class="text-center">
+    <tr *ngFor=" let employee of lstEmployee">
+      <td>{{ getFullName(employee) }}</td>
+      <td>{{employee.email}}</td>
+      <td>{{employee.phone}}</td>
+      <td>{{employee.salary}}</td>
+      <td>{{employee.birthdate | date: 'dd/MM/yyyy'}}</td>
+      <td>{{employee.companyName}}</td>
+      <td>{{employee.jobExperience}}</td>
+      <td>{{employee.gender ? 'Male' : 'Female'}}</td>
+      
+     
+      <td>
+        <button class="btn btn-primary" (click)="editEmployee(employee)">Edit</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" (click)="employeetodelete(employee)">Delete</button>
+      </td> -->
+
+    <!-- </tr>
+  </tbody>
+</table>
+</div>
+  </div>
+</div>  -->
+
+
+<!----add and edit modal-->
+<!-- <div  class="form-wrapper" *ngIf="showForm" >
+  <div class="mobileForm">
+    <h2 class="text-center text-info">{{formHeader}}</h2>
+    <div class="group">
+      <label for="">Name:</label>
+      <input type="text" [(ngModel)]="objEmployee.firstName" name="name" class="form-control" />
+    </div>
+    <div class="group">
+      <label for="">Email:</label>
+      <input type="text" [(ngModel)]="objEmployee.email" name="email" class="form-control">
+    </div>
+    <div class="group">
+      <label for="">Phone:</label>
+      <input type="text" [(ngModel)]="objEmployee.phone" name="phone" class="form-control">
+    </div>
+    <div class="group">
+      <label for="">Salary:</label>
+      <input type="text" [(ngModel)]="objEmployee.salary" name="salary" class="form-control">
+    </div>
+   
+    <div class="action">
+      <button class="btn btn-primary save" (click)="saveEmployee()">Save</button>
+      <button class="btn btn-danger cancle" (click)="closeForm()">Close</button>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete your employee?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="deleteEmployee()">Delete</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="main-content">
+  <div class="tabluar-wrapper">
+    <h4 class="main-title">Employee Details</h4>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Salary</th>
+                  <th>Birthday</th>
+                  <th>Company</th>
+                  <th>Experience</th>
+                  <th>Gender</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let employee of lstEmployee">
+                   
+                  <td>{{ getFullName(employee) }}</td>
+                  <td>{{employee.email}}</td>
+                  <td>{{employee.phone}}</td>
+                  <td>{{employee.salary}}</td>
+                  <td>{{employee.birthdate | date: 'dd/MM/yyyy'}}</td>
+                  <td>{{employee.companyName}}</td>
+                  <td>{{employee.jobExperience}}</td>
+                  <td>{{employee.gender ? 'Male' : 'Female'}}</td>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+

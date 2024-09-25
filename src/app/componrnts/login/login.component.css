@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+html,body{
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  place-items: center;
+  background: linear-gradient(to top,#d59cd0 50%, purple 100%) no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+
+.wrapper-card{
+  width: 340px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+     
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.wrapper-card .title{
+  line-height: 80px;
+  background: #650465;
+  /* padding-left: 20px; */
+  border-radius: 5px 5px 0 0;
+  font-size: 25px;
+  color:#fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wrapper-card form{
+  padding: 27px 36px 5px 39px;
+}
+
+.wrapper-card form .pass{
+margin: -10px 0 15px 0;
+}
+.wrapper-card form .pass a{
+  color:#650465;
+  text-decoration: none;
+  position: relative;
+  font-size: 17px;
+  top: 13px;
+  left: -11px;
+}
+
+.wrapper-card form .pass a:hover{
+  
+  text-decoration: underline;
+ 
+}
+
+.wrapper-card form .row{
+  height: 45px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.wrapper-card form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 16px;
+}
+.wrapper-card form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  background: #650465;
+  border: 1px solid #650465;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  color: #fff;
+}
+
+.wrapper-card form .button input{
+padding-left: 0px;
+font-size: 18px;
+background: #650465;
+border: 1px solid #650465;
+cursor: pointer;
+color: #fff;
+font-weight: 500;
+}
+
+.wrapper-card form .button input:hover{
+  background: #4c054c;
+}
+
+ .signup-link a:hover{
+  
+  text-decoration: underline;
+ 
+}
+
+ .signup-link{
+  margin: -10px 0 15px 0;
+  text-align: center;
+  }
+
+ .signup-link a{
+    color:#650465;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .icon{
+    position: absolute;
+    left: 247px;
+    top: 22px;
+    color: purple;
+  }
